@@ -1,20 +1,16 @@
-
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
 
-//----------------------------------------------------------------------------------------
 int menuOpcoes();
-
 int geraNumeroParaProcesso();
 bool VerificaListaVazia();
 void imprimirProcessos();
 void incluiProcesso();
 void encerraProcesso();
-//-----------------------------------------------------------------------------------------
+
 struct process
 {
-
     int num;
 
     struct process *prox;
@@ -26,17 +22,14 @@ pro topo=NULL, ultimo=NULL;
 
 int main()
 {
-
     int op;
 
     do
     {
-
         op = menuOpcoes();
 
         switch (op)
         {
-
         case 0:
             cout << "\n Desligando, até a proxima\n";
             break;
